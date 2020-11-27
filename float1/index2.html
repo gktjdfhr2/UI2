@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { box-sizing: border-box;}
+        .header, .footer{
+            height: 100px;
+            background-color: skyblue;
+        }
+        .column {
+            float: left;
+            height: 500px;
+        }
+        
+        
+        .lside,.rside {
+            width: 25%;
+            
+            background-color:darkgray;
+        }
+        .content {
+            width: 50%;
+        }
+        
+        .main::after{
+            content: "";
+            display: table;
+            clear: both;
+            /* float 속성 사용 후 float 속성을 원래대로 clear해줘야함 만약 clear 하지 않을 경우 원하는대로 UI가 표시되는 것을 보장하지 못함 */
+            /* float 속성의 clear 는 flaot 속성을 사용한 태그가 하는 것이 아니라 다음에 사용되는 태그가 해줘야 함 */
+            /* 현재는 float 를 사용하는 태그의 부모태그에서 float  속성을 clear 시키는 방법을 사용함 */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">머릿말</div>
+    <div class="main">
+        <div class="column lside ">사이드</div>
+        <div class="column content ">메인</div>
+        <div class="column rside ">사이드</div>
+    </div>
+    <div class="footer">꼬릿말</div>
+</body>
+</html>
