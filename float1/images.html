@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { box-sizing: border-box;}
+        .img-container {
+            float: left;
+            width: 33.3%;
+            padding: 5px;
+        }
+
+        .img-container img { width: 100%;}
+        .box::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="img-container">
+            <img src="../media/forest.jpg" alt="">
+        </div>
+
+        <div class="img-container">
+            <img src="../media/river.jpg" alt="">
+        </div>
+        <div class="img-container">
+            <img src="../media/5terre.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

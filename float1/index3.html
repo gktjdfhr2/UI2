@@ -14,6 +14,7 @@
             font-family: "D2Coding";
         }
         .contents {
+            /* 왼쪽 사이드바 영역과 겹치는 것을 방지하기 위해 */
             margin-left: 200px;
             padding-left: 20px;
         }
@@ -21,10 +22,13 @@
         .sidenav {
             height: 100%;
             width: 200px;
+            /* html 의 최상위 태그 시작지점(0,0)을 기준으로 화면 전체에 고정되는 방식 */
             position: fixed;
-            z-index: 100;
+           
             top: 0;
             left: 0;
+            /* 하나의 위치에서 여러 태그가 겹쳐서 그려질 경우 화면에 표시되는 우선 순위를 표시하는 속성 */
+            z-index: 100;
             overflow: hidden;
             background-color: #111111;
         }
@@ -37,6 +41,7 @@
             color: white;
             padding: 16px;
             text-decoration: none;
+            /* 하나의 라인에 컨텐츠가 1개만 출력되야 하기 때문에 display:block을 사용 */
             display: block;            
         }
 

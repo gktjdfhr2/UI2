@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image container</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+        header, footer {
+            height: 50px;
+            background-color: yellowgreen;
+            font-size: 30px;
+        }
+        .imagebox {
+            width: 33.3%;
+            float: left;
+            display: block; 
+            padding :10px;
+            
+        }
+
+        line {
+            display: hidden;
+            padding: 5px;
+        }
+        img {
+            width: 100%;
+        }
+
+        .line::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .imagebox > div {
+            padding:4px 16px;
+            box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Summer Holiday
+    </header>
+    <main>
+
+        <div class="line">
+            <div class="imagebox">
+                <img src="../images/img_5terre.jpg" alt="">
+                <div>
+                    <p><h4>5terre</h4></p>
+                </div>
+
+            </div>
+            <div class="imagebox">
+                <img src="../images/img_monterosso.jpg" alt="">
+                <div>
+                    <p><h4>Monerosso</h4></p>
+                </div>
+
+            </div>
+            <div class="imagebox">
+                <img src="../images/img_vernazza.jpg" alt="">
+                <div>
+                    <p><h4>Vernazza</h4></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="line">
+            <div class="imagebox">
+                <img src="../images/img_manarola.jpg" alt="">
+                <div>
+                    <p><h4>Manarola</h4></p>
+                </div>
+
+            </div>
+            <div class="imagebox">
+                <img src="../images/img_corniglia.jpg" alt="">
+                <div>
+                    <p><h4>cornigla</h4></p>
+                </div>
+
+            </div>
+            <div class="imagebox">
+                <img src="../images/img_riomaggiore.jpg" alt="">
+                <div>
+                    <p><h4>Riomaggiore</h4></p>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

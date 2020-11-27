@@ -40,11 +40,16 @@
         } */
 
         main {
+            
             background-color: #dddddd;
             padding: 10px;
             height: 300px;
         }
 
+        .culumn {
+            float: left;
+            width: 33.3%;
+        }
         footer {
             background-color: #f1f1f1;
             padding: 10px;
@@ -91,6 +96,11 @@
             display: table;
             clear: both;
         }
+        main::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
     </style>
 
 </head>
@@ -110,8 +120,17 @@
         </nav>
     </header>
     <main>
-        <h2>Main Contents</h2>
-        <p>메인 컨텐츠가 들어갈 자리</p>
+        <div class="culumn lside">
+            lside
+        </div>
+        <div class="culumn content">
+            <h2>Main Contents</h2>
+            <p>메인 컨텐츠가 들어갈 자리</p>
+        </div>
+        <div class="culumn rside">
+            rside
+        </div>
+        
     </main>
     <footer>
         <p>Footer</p>
