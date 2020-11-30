@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Tables</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            text-align: center;
+
+        }
+        section {
+            width: 33.3%;
+            float: left;
+            padding: 5px;
+        }
+        header {
+            font-size: 40px;
+            text-align: left;
+        }
+
+        .divBox {
+
+            
+            
+            
+        }
+
+        .block {
+            height: 50px;
+            border: 1px solid gray;
+            padding: 10px;
+        }
+
+        .block>span {
+            font-weight: bold;
+        }
+
+        .head {
+            background-color: black;
+            height: 70px;
+            font-size: 30px;
+            color: white;
+        }
+
+        .price>span {
+            font-size: 30px;
+        }
+
+        .center {
+            background-color: green;
+        }
+
+        .price {
+            padding: 20px;
+            height: 100px;
+        }
+        .end {
+            background-color: rgba(128,128,128,0.3);
+        }
+        .btn {
+            width: 40%;
+            background-color: green;
+            color: white;
+            margin: 0 auto;
+
+
+
+        }
+
+        .btn:hover {
+            background-color: lightgreen;
+        }
+
+        .divBox:hover {
+            box-shadow: 10px 10px 10px gray;
+        }
+
+        main::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        @media (max-width: 576px){
+            section { width: 100%;}
+            section { width: 100%;}
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Responsive Pricing Tables
+    </header>
+    <main>
+        <section>
+        <div class="divBox">
+            <div class="head block">Basic</div>
+            <div class="block"><span>10GB</span> Storage</div>
+            <div class="block"><span>10</span> Emails</div>
+            <div class="block"><span>Endless</span> Support</div>
+            <div class="price block"><span>$ 10</span> <br>per month</div>
+            <div class="end block">
+                <div class="btn">Sign Up</div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="divBox">
+            <div class="head center block">Basic</div>
+            <div class="block"><span>25GB</span> Storage</div>
+            <div class="block"><span>25</span> Emails</div>
+            <div class="block"><span>Endless</span> Support</div>
+            <div class="price block"><span>$ 25</span> <br>per month</div>
+            <div class="end block">
+                <div class="btn">Sign Up</div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="divBox">
+            <div class="head block">Basic</div>
+            <div class="block"><span>50GB</span> Storage</div>
+            <div class="block"><span>50</span> Emails</div>
+            <div class="block"><span>Endless</span> Support</div>
+            <div class="price block"><span>$ 50</span> <br> per month</div>
+            <div class="end block">
+                <div class="btn">Sign Up</div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
