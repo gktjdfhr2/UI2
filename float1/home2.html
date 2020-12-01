@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home2</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .iconbox > div {
+            float: left;
+            text-align: center;
+            width: 33.3%;
+            background-color: black;
+            color: white;
+            height: 44px;
+            padding: 8px 16px;
+        }
+
+        .imgbox {
+            
+            border-bottom: 1px solid gray ;
+        }
+        .imgbox img{
+            padding: 8px 16px;
+        }
+
+        .CSS .btn,.JS .btn{
+            float: left;
+            height: 30px;
+            margin-right: 10px;
+            padding: 5px;
+            background-color: #009688;
+            color: white;
+        }
+        .btn2 {
+            height: 30px;
+            background-color: #009688;
+            color: white;
+        }
+
+        .btn:hover, .btn2:hover {
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+        
+        .lcolumn {
+            width: 25%;
+            float: left;
+            
+        }
+        .combo {
+            padding: 12px 24px;
+            margin-top:16px;
+            margin-bottom: 20px;
+            display: block;
+            background-color: rgba(241,241,241,0.6);;
+            
+        }
+        .combo > * {
+            margin: 24px;
+        }
+        .CSStext {
+            border-left:5px solid #009688;
+            margin-top: 50px;
+            width: 100%;
+            background-color: white;
+            padding-left: 5px;
+        }
+        .rcolumn {
+            width:75%;
+            float: left;
+            
+        }
+        .block {
+            padding: 8px 16px;
+        }
+        .block > a {
+            text-decoration: none;
+            color: inherit;
+            font-size: 18px;
+            font-weight:bold;
+        }
+
+        header {
+            height: 252px;
+            padding: 64px 16px;
+            font-size: 48px;
+            text-align: center;
+            color: white;
+            background-color: #009688;
+        }
+
+        footer {
+            background-color: rgba(241,241,241,0.6);
+            height: 76px;
+            padding: 12px 24px;
+        }
+        body::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .headerbox::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .btnbox::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .iconbox::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        main::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+    </style>
+</head>
+<body>
+    <section class="lcolumn">
+        <nav class="iconbox">
+            <div><i class="fa fa-bars" style="font-size: x-large;"></i></div>
+            <div><i class="fa fa-file" style="font-size: x-large;"></i></div>
+            <div><i class="fa fa-camera" style="font-size: x-large;"></i></div>
+            
+        </nav>
+        <div class="imgbox">
+            <img src="../images/w3schools.png" alt="">
+        </div>
+
+        <div>
+            
+            <div class="content block"><a href="https://www.w3schools.com/html/default.asp">Learn HTML</a> </div>
+            
+            <div class="content block"><a href="https://www.w3schools.com/w3css/default.asp">Learn W3.CSS</a></div>
+            
+            <div class="content block"><a href="https://www.w3schools.com/js/default.asp">JavaScript</a> </div>
+            
+            <div class="content block"><a href="https://www.w3schools.com/sql/default.asp">SQL</a> </div>
+            <div class="content block"><a href="https://www.w3schools.com/php/default.asp">PHP</a> </div>
+        </div>
+        
+    </section>
+    <section class="rcolumn">
+        <header>
+            W3Schools.com
+        </header>
+        <main>
+            <div class="CSS combo">
+                <h1 style="font-size: 64px;">CSS</h1>
+                <h3 style="font-size: 24px;">The Language for Styling Web Page</h3>
+                <div class="btnbox">
+                    <button class="CSS btn">LEARN CSS</button>
+                    <button class="CSS btn">CSS REFERENCE</button>
+                </div>
+                <div class="CSStext">
+                    body { <br>
+                    background-color: #d0e4fe;<br>
+                    } <br>
+                    h1 { <br>
+                    color: orange; <br>
+                    text-align: center; <br>
+                    } <br>
+                    p { <br>
+                    font-family: "Times New Roman"; <br>
+                    font-size: 20px; <br>
+                    }
+                </div>
+                <div class="btnbox">
+                    <button class="CSS btn2"> Try it Yourself</button>
+                </div>
+            </div>
+
+            <div class="JS combo">
+                <h1 style="font-size: 64px;">JavaScript</h1>
+                <h3 style="font-size: 24px;">The Language for Styling Web Page</h3>
+                <div class="btnbox">
+                    <button class="JS btn">LEARN CSS</button>
+                    <button class="JS btn">CSS REFERENCE</button>
+                </div>
+                <div class="CSStext">
+                    body { <br>
+                    background-color: #d0e4fe;<br>
+                    } <br>
+                    h1 { <br>
+                    color: orange; <br>
+                    text-align: center; <br>
+                    } <br>
+                    p { <br>
+                    font-family: "Times New Roman"; <br>
+                    font-size: 20px; <br>
+                    }
+                </div>
+                <div class="btnbox">
+                    <button class="JS btn2"> Try it Yourself</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="linkbox">
+                <a href="">Forum</a>|
+                <a href="">about</a>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>

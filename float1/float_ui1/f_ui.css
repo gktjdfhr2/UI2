@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    height: 54px;        
+}
+
+nav > *{
+    color: black;
+}
+.rlink > * {
+    color: black;
+}
+
+.rlink {    
+    float: right;
+}
+.second .box-left, .second .box-right {
+    float: left;
+}
+
+.second::after {
+    content:"";
+    display: table;
+    clear: both;
+}
+header >nav::after {
+    content: "";
+    display: table;
+    clear: both;
+}

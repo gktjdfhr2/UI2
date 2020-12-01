@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        header {
+            height: 100px;
+        }
+
+        .hWord {
+            float: right;
+        }
+
+        .nav {
+            width: 100%;
+            background-color: green;
+
+
+        }
+
+        .nLink {
+            color: white;
+            background-color: green;
+            height: 50px;
+            padding: 10px;
+            float: left;
+
+        }
+        
+
+        .nlinkbox {
+            background-color: green;
+        }
+
+        .nlinkbox::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .nLink:hover {
+            
+            background-color: white;
+            color: black;
+        }
+
+        .lcolumn {
+            width: 10%;
+            float: left;
+        }
+
+        .rcolumn {
+            width: 90%;
+            float: left;
+
+        }
+        .block {
+            
+            padding: 5px;
+        }
+        .block:hover {
+            background-color: gray;
+        }
+
+        .combo {
+            padding: 20px;
+            margin-bottom:20px;
+            margin-right: 20px;
+            display: block;
+            background-color: rgba(128, 128, 128, 0.2);
+            box-shadow: 0 2px 4px 2px;
+        }
+        .combo > div {
+            padding-top: 10px ;
+        }
+        .CSStext {
+            border-left:5px solid green;
+            margin-top: 50px;
+            width: 100%;
+            background-color: white;
+            padding-left: 5px;
+        }
+
+        .CSS .btn,.JS .btn{
+            float: left;
+            height: 30px;
+            margin-right: 10px;
+            padding: 5px;
+            background-color: green;
+            color: white;
+        }
+        .btn2 {
+            height: 30px;
+            background-color: green;
+            color: white;
+        }
+
+        .btn:hover, .btn2:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .headerbox::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .btnBox::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        main::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="headerbox">
+            <img src="../images/w3schools.png" alt="">
+            <div class="hWord">
+                THE WORLD LARGEST WEB DEVELOPER SITE
+            </div>
+        </div>
+        <nav>
+            <div class="nlinkbox">
+                <div class="nLink">TUTORIAL</div>
+                <div class="nLink">REFERENCES</div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="lcolumn">
+            <div>
+                <div class="content block"style="font-size:20px;font-weight:bold;" >Tutorials</div>
+                <div class="content block"><a href="https://www.w3schools.com/html/default.asp">Learn HTML</a> </div>
+                <div class="content block"><a href="https://www.w3schools.com/css/default.asp">Learn CSS</a> </div>
+                <div class="content block"><a href="https://www.w3schools.com/w3css/default.asp">Learn W3.CSS</a></div>
+                <div class="content block"><a href="https://www.w3schools.com/colors/default.asp">Learn Colors</a> </div>
+                <div class="content block"><a href="https://www.w3schools.com/js/default.asp">JavaScript</a> </div>
+                <div class="content block"><a href="https://www.w3schools.com/xml/default.asp">XML</a> </div>
+                <div class="content block"><a href="https://www.w3schools.com/sql/default.asp">SQL</a> </div>
+                <div class="content block"><a href="https://www.w3schools.com/php/default.asp">PHP</a> </div>
+            </div>
+        </section>
+        <section class="rcolumn">
+            <div>
+                <div class="CSS combo">
+                    <h1>CSS</h1>
+                    <h3>The Language for Styling Web Page</h3>
+                    <div class="btnbox">
+                        <button class="CSS btn">LEARN CSS</button>
+                        <button class="CSS btn">CSS REFERENCE</button>
+                    </div>
+                    <div class="CSStext">
+                        body { <br>
+                        background-color: #d0e4fe;<br>
+                        } <br>
+                        h1 { <br>
+                        color: orange; <br>
+                        text-align: center; <br>
+                        } <br>
+                        p { <br>
+                        font-family: "Times New Roman"; <br>
+                        font-size: 20px; <br>
+                        }
+                    </div>
+                    <div class="btnbox">
+                        <button class="CSS btn2"> Try it Yourself</button>
+                    </div>
+                </div>
+
+                <div class="JS combo">
+                    <h1>CSS</h1>
+                    <h3>The Language for Styling Web Page</h3>
+                    <div class="btnbox">
+                        <button class="JS btn">LEARN CSS</button>
+                        <button class="JS btn">CSS REFERENCE</button>
+                    </div>
+                    <div class="CSStext">
+                        body { <br>
+                        background-color: #d0e4fe;<br>
+                        } <br>
+                        h1 { <br>
+                        color: orange; <br>
+                        text-align: center; <br>
+                        } <br>
+                        p { <br>
+                        font-family: "Times New Roman"; <br>
+                        font-size: 20px; <br>
+                        }
+                    </div>
+                    <div class="btnbox">
+                        <button class="JS btn2"> Try it Yourself</button>
+                    </div>
+                </div>
+
+
+                
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
