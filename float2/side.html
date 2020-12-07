@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../../javascript/jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btnOpen").on("click",function() {
+                // 사이드바 오픈 버튼 클릭 시 사이드 메뉴에 너비값을 입력, 메인 영역의 margin-left 값을 입력하여 사이드 메뉴 영역에 겹치지 않도록 함
+                $("#mySidebar").css("width","250px");
+                $("#main").css("marginLeft","250px");
+            });
+
+            $("#btnClose").on("click", function() {
+                $("#mySidebar").css("width","0px");
+                $("#main").css("marginLeft","0px");
+            });
+        })
+    </script>
+    <style>
+        .sidebar {
+            height: 100%;
+            width: 0;
+            /* position:fixed 를 사용하여 웹 브라우저의 body 영역에 고정되도록 함 */
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            background-color: #111111;
+            overflow: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: gray;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover { color: white;}
+
+        .sidebar .btn-close {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        .btn-open {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #111111;
+            color : white;
+            padding: 16px;
+            border: none;
+        }
+        .btn-open:hover {
+            background-color: #444444;
+        }
+        #main {
+            transition: margin-left 0.5s;
+            padding : 16px;
+        }
+    </style>
+</head>
+<body>
+    <div id="mySidebar" class="sidebar">
+        <!-- 영역 닫힘 버튼 역할을 하는 a태그 -->
+        <a class="btn-close" id="btnClose"><i class="fa fa-close"></i></a>
+        <a href="#">링크1</a>
+        <a href="#">링크2</a>
+        <a href="#">링크3</a>
+        <a href="#">링크4</a>
+    </div>
+
+    <div id="main">
+        <button class="btn-open" id="btnOpen">Open Sidebar</button>
+    </div>
+</body>
+</html>
